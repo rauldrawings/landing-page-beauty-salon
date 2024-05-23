@@ -1,4 +1,4 @@
-/*reset*/
+/* Reset */
 *{
     margin: 0;
     padding: 0;
@@ -14,10 +14,10 @@ img{
     width: 100%;
     height: auto;
 }
-    /*variaveis*/
+/* variaveis */
 :root{
     --header-height: 4.5rem;
-/*color*/
+        /* color */
     --hue: 159;
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);
@@ -26,11 +26,11 @@ img{
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
-/*font*/
+        /* Fonts */
     --title-font-size: 1.875rem;
     --subtitle-font-size: 1rem;
-    --title-font: 'Poppins' , sans-serif;
-    --body-font: 'DN sans' , sans-serif;
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'DN Sans', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -39,14 +39,14 @@ body{
     font: 400 1rem var(--body-font);
     color: var(--text-color);
     background: var(--body-color);
-    -webkit-font-smoonthing: antialiased; 
+    -webkit-font-smoothing: antialiased;
 }
 .title{
     font: 700 var(--title-font-size) var(--title-font);
     color: var(--title-color);
-    -webkit-font-smoonthing: auto;
+    -webkit-font-smoothing: auto
 }
-/*layout*/
+/* layout */
 #header{
     border-bottom: 1px solid #e4e4e4;
     margin-bottom: 2rem;
@@ -58,7 +58,7 @@ body{
     background-color: var(--body-color);
     width: 100%;
 }
-#header .scroll{
+#header.scroll{
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
 }
 .container{
@@ -68,10 +68,10 @@ body{
     display: grid;
     gap: 2rem;
 }
-/*logo*/
+/* logo */
 .logo{
     font: 700 1.31rem var(--title-font);
-    color: var(--title-font);
+    color: var(--title-color);
 }
 .logo span{
     color: var(--base-color);
@@ -95,8 +95,8 @@ nav ul li a:hover,
 nav ul li a.active{
     color: var(--base-color);
 }
-nav ul li a.after{
-    content:  '';
+nav ul li a:after{
+    content: '';
     width: 0%;
     height: 2px;
     background: var(--base-color);
@@ -113,13 +113,13 @@ nav .menu{
     opacity: 0;
     visibility: hidden;
     top: -20rem;
-    transition: 0.2s; 
+    transition: 0.2s;
 }
 nav .menu ul{
     display: none;
 }
-/* Mostra menu */
-nav .show .menu{
+/* Mostra Menu */
+nav.show .menu{
     opacity: 1;
     visibility: visible;
     background: var(--body-color);
@@ -131,11 +131,11 @@ nav .show .menu{
     display: grid;
     place-content: center;
 }
-nav .show ul .grid{
+nav.show ul.grid{
     display: grid;
     gap: 4rem;
 }
-/* Toggle menu */
+/* Toggle Menu */
 .toggle{
     color: var(--base-color);
     font-size: 1.5rem;
@@ -149,7 +149,7 @@ nav .icon-close{
     right: 1.5rem;
     transition: 0.2s;
 }
-nav .show div .icon-close{
+nav.show div.icon-close{
     visibility: visible;
     opacity: 1;
     top: 1.5rem;
