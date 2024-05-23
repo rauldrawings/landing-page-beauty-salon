@@ -41,7 +41,11 @@ body{
     background: var(--body-color);
     -webkit-font-smoonthing: antialiased; 
 }
-
+.title{
+    font: 700 var(--title-font-size) var(--title-font);
+    color: var(--title-color);
+    -webkit-font-smoonthing: auto;
+}
 /*layout*/
 .container{
     margin: 0 1.5rem;
