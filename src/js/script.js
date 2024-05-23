@@ -12,3 +12,4 @@ for (const link of links) {
         nav.classList.remove('show')
     })
 }
+    
