@@ -1,3 +1,4 @@
+/*reset*/
 *{
     margin: 0;
     padding: 0;
@@ -13,23 +14,23 @@ img{
     width: 100%;
     height: auto;
 }
-/*variáveis*/
+    /*variaveis*/
 :root{
     --header-height: 4.5rem;
-    /*cores*/
+/*color*/
     --hue: 159;
     --base-color: hsl(var(--hue) 36% 57%);
-    --base-color-second: hsl(var(--hue) 65% 68%);
-    --base-color-alt: hsl(var(--hue) 57% 53%);
-    --title-color: hsl(var(--hue) 41% 10%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue)57% 53%);
+    --title-color: hsl(var(--hue)41% 10%);
     --text-color: hsl(0 0% 46%);
-    --text-color-light: hsl( 0 0% 98%);
+    --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
-    /*fontes*/
+/*font*/
     --title-font-size: 1.875rem;
     --subtitle-font-size: 1rem;
-    --title-font: 'Poppins', sans-serif;
-    --body-font: 'DN Sans', sans-serif;
+    --title-font: 'poppins' , sans-serif;
+    --body-font: 'DN sans' , sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -37,9 +38,10 @@ html{
 body{
     font: 400 1rem var(--body-font);
     color: var(--text-color);
-    background-color: var(--body-color);
-    -webkit-font-smoothing: antialiased;
+    background: var(--body-color);
+    -webkit-font-smoonthing: antialiased; 
 }
+
 /*layout*/
 .container{
     margin: 0 1.5rem;
@@ -47,7 +49,7 @@ body{
 /*logo*/
 .logo{
     font: 700 1.31rem var(--title-font);
-    color: var(--title-color);
+    color: var(--title-font);
 }
 .logo span{
     color: var(--base-color);
