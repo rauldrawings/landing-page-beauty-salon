@@ -46,6 +46,24 @@ body{
     color: var(--title-color);
     -webkit-font-smoothing: auto
 }
+.button{
+    background-color: var(--title-font-size);
+    color: var(--text-color);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    font: 500 1rem var(--body-font);
+    transition: background 0.3s;
+}
+.button:hover{
+    background: var(--base-color-alt);
+}
+.divider-1{
+    height: 1px;
+    background: linear-gradient(270deg, hsla(var(--hue), 36%, 57%, 1), hsla(var(--hue), 65%, 88%, 0.34));
+}
 /* layout */
 #header{
     border-bottom: 1px solid #e4e4e4;
