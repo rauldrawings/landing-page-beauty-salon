@@ -86,6 +86,15 @@ body{
     display: grid;
     gap: 2rem;
 }
+.section{
+    padding: calc(5rem + var(--header-height)) 0;
+}
+.section .title{
+    margin-bottom: 1rem;
+}
+.section header{
+    margin-bottom: 4rem;
+}
 /* logo */
 .logo{
     font: 700 1.31rem var(--title-font);
@@ -171,6 +180,45 @@ nav.show div.icon-close{
     visibility: visible;
     opacity: 1;
     top: 1.5rem;
+}
+/* Home */
+#home{
+    overflow: hidden;
+}
+#home .container{
+    margin: 0;
+}
+#home .image{
+    position: relative;
+}
+#home .image::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
+}
+#home .image img{
+    position: relative;
+    right: 2.93rem;
+}
+#home .image img,
+#home .image::before{
+    border-radius: 0.25rem;
+}
+#home .text{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+}
+#home .text h2{
+    margin-bottom: 1rem;
+}
+#home .text p{
+    margin-bottom: 2rem;
 }
 @media  (min-width: 1200px){
     .container{
