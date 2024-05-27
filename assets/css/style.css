@@ -96,8 +96,14 @@ body{
 .section .title{
     margin-bottom: 1rem;
 }
+.section .sub-title{
+    font-size: var(--subtitle-font-size);
+}
 .section header{
     margin-bottom: 4rem;
+}
+.section header strong{
+    color: var(--base-color);
 }
 /* logo */
 .logo{
@@ -254,6 +260,27 @@ nav.show div.icon-close{
 #about .text{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+/* Services */
+#services .cards .grid{
+    gap: 1.5rem
+}
+#services .card{
+    padding: 3.625rem 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 0.25rem solid var(--base-color);
+    border-radius: 0.25rem 0.25rem 0 0;
+    text-align: center;
+}
+#services .card i{
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: var(--base-color);
+}
+#services .card .title{
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 @media  (min-width: 1200px){
     .container{
