@@ -12,4 +12,18 @@ for (const link of links) {
         nav.classList.remove('show')
     })
 }
-    
+// Carrosel Swiper
+const swiper = new Swiper('.swiper-container',{
+    slidesPerView: 1,
+    pagination:{
+        el: '.swiper-pagination'
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints:{
+        767:{
+            slidePerView:2,
+            setWrapperSize: true
+        }
+    }
+}) 

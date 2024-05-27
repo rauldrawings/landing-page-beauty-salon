@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Css-->
+    <!-- Css -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!--Icoomon-->
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Icoomon -->
     <link rel="stylesheet" href="./assets/css/icomoon.css">
-    <!--Fonts-->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -23,7 +25,7 @@
                     <li><a href="#home" class="title">Início</a></li>
                     <li><a href="#about" class="title">Sobre</a></li>
                     <li><a href="#services" class="title">Serviços</a></li>
-                    <li><a href="#testmonials" class="title">Depoimentos</a></li>
+                    <li><a href="#testimonials" class="title">Depoimentos</a></li>
                     <li><a href="#contact" class="title">Contatos</a></li>
                 </ul>
             </div>
@@ -63,7 +65,6 @@
                 </div>
             </div>
         </section>
-        <div class="diveder-2"></div>
         <!-- Services -->
         <section class="section" id="services">
             <div class="container grid">
@@ -91,11 +92,72 @@
             </div>
         </section>
         <!-- Testimonials -->
-        <section class="section" id="testimonials"></section>
+        <section class="section" id="testimonials">
+            <div class="container grid">
+                <header>
+                    <h2 class="title"> Depoimento de quem já passou por aqui </h2>
+                </header>
+                <div class="testimonials swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p> <span> &ldquo; </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quam assumenda quaerat asperiores nostrum molestias, quibusdam iure laudantium eius eligendi ratione esse vitae ea iusto omnis at libero impedit quo. </p>
+                            <cite>
+                                <img src="./assets/img/Vanessa souza.jpg" alt="Foto de Wanessa Souza">
+                                Wanessa souza
+                            </cite>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p> <span> &ldquo; </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quam assumenda quaerat asperiores nostrum molestias, quibusdam iure laudantium eius eligendi ratione esse vitae ea iusto omnis at libero impedit quo. </p>
+                            <cite>
+                                <img src="./assets/img/Luna Falcão.jpg" alt="Foto de Luna Falcão">
+                                Luna Falcão
+                            </cite>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p> <span> &ldquo; </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quam assumenda quaerat asperiores nostrum molestias, quibusdam iure laudantium eius eligendi ratione esse vitae ea iusto omnis at libero impedit quo. </p>
+                            <cite>
+                                <img src="./assets/img/aquela la.jpg" alt="Foto de Melissa strada">
+                                Melissa Strada
+                            </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Paginação -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <div class="divider-2"></div>
+                </div>
+            </div>
         <!-- Contact -->
-        <section class="section" id="contact"></section>
+        <section class="section" id="contact">
+            <div class="container grid">
+                <div class="text">
+                    <h2 class="title"> Entre em contato com a gente! </h2>
+                    <p> Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões. </p>
+                    <a href="https://api.whatsapp.com/send?phone=+5511998456754&text=SuaMensagem" class="button"
+                    target="_blank"><i class="icon-whatsapp"></i> Entrar em contato</a>"></a>
+                </div>
+                <div class="links">
+                    <ul class="grid">
+                        <li><i class="icon-phone"></i> 11 99845-6754 </li>
+                        <li><i class="icon-map-pin"></i> R. Amauri Souza, 346 </li>
+                        <li> <i class="icon-mail"></i> contato@beautysalon.com</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Script -->
     <script src="src/js/script.js"></script>
 </body>
 </html>
